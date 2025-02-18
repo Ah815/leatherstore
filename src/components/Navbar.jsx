@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link href="/premium-bike-gear" className="hover:text-[#cb7120]">
             Premium Bike Gear
           </Link>
-          <Link href="/leather-bags" className="hover:text-[#cb7120]">
+          <Link href="/leatherBags" className="hover:text-[#cb7120]">
             Leather Bags
           </Link>
           <Link href="/jackets" className="hover:text-[#cb7120]">
@@ -90,7 +90,7 @@ export default function Navbar() {
           <Link href="/premium-bike-gear" className="text-black font-bold">
             Premium Bike Gear
           </Link>
-          <Link href="/leather-bags" className="text-black font-bold">
+          <Link href="/leatherBags" className="text-black font-bold">
             Leather Bags
           </Link>
           <Link href="/jackets" className="text-black font-bold">

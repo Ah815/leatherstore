@@ -50,22 +50,20 @@ const Page = () => {
         </div>
       </section>
 
-      <div className="  py-12 px-6">
+      <div className="py-12 px-6">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product) => (
               <div
                 key={product.id}
-                className="group relative border border-[#D4AF37] shadow-lg p-4 bg-white rounded-lg"
+                className="group relative shadow-lg p-4 bg-white rounded-lg"
               >
-                <div className="aspect-[3/4] w-full overflow-hidden">
+                <div className="aspect-square relative w-full rounded-lg overflow-hidden">
                   <Image
                     src={product.image}
                     alt={product.name}
-                    objectFit="cover"
-                    width={500}
-                    height={500}
-                    className="h-full w-full object-cover transition-opacity group-hover:opacity-75"
+                    fill
+                    className="object-cover object-center transition-opacity group-hover:opacity-75"
                   />
                 </div>
                 <h3 className="mt-3 text-center text-lg font-serif font-semibold text-[#2F4F4F]">
