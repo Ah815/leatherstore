@@ -9,7 +9,7 @@ const AboutPage = () => {
       <Navbar />
       <main>
         {/* About Section */}
-        <section className="relative w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center text-center text-white">
+        <section className="relative w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh] flex items-center justify-center text-center text-white">
           <div className="absolute inset-0">
             <Image
               src="/images/hangerJackets.jpeg"

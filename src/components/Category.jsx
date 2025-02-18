@@ -68,24 +68,23 @@ export default function CategorySection() {
       </section>
 
       <section className="container mx-auto bg-[#F5F5F0]">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-16 p-8 md:p-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 p-4 md:p-8 lg:p-16">
           {/* Text Content */}
-          <div className="flex-1 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C3E50] leading-tight">
+          <div className="flex-1 space-y-4 md:space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2C3E50] leading-tight">
               Timeless Elegance,
               <br />
               Uncompromising
               <br />
               <span className="text-[#8B5A2B]">Quality</span>
             </h2>
-            <p className="text-[#34495E] text-lg md:text-xl max-w-xl font-light leading-relaxed">
-              Experience the pinnacle of craftsmanship with our premium leather
-              jackets. Each piece is a testament to enduring style and
-              unparalleled comfort, perfect for the discerning individual.
+            <p className="text-[#34495E] text-base md:text-lg lg:text-xl max-w-xl font-light leading-relaxed">
+              Experience the pinnacle of craftsmanship with our premium leather jackets. Each piece is a testament to
+              enduring style and unparalleled comfort, perfect for the discerning individual.
             </p>
             <Link
               href="/collections"
-              className="inline-block px-8 py-4 bg-[#2C3E50] text-white text-lg font-serif 
+              className="inline-block px-6 py-3 md:px-8 md:py-4 bg-[#2C3E50] text-white text-base md:text-lg font-serif 
                        hover:bg-[#34495E] transition-colors duration-200 uppercase tracking-wide"
             >
               View Collection
@@ -93,49 +92,39 @@ export default function CategorySection() {
           </div>
 
           {/* Image */}
-          <div className="flex-1">
-            <Image
-              src="/images/hangerJackets.jpeg"
-              alt="Exquisite leather jackets displayed on wooden hangers"
-              width={600}
-              height={800}
-              className="w-full h-auto object-cover"
-              priority
-            />
+          <div className="flex-1 w-full max-w-md md:max-w-lg lg:max-w-xl">
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src="/images/hangerJackets.jpeg"
+                alt="Exquisite leather jackets displayed on wooden hangers"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="container mx-auto bg-[#F5DEB3]">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-16 p-8 md:p-16">
-          <div className="flex-1">
-            <Image
-              src="/images/hangerJackets.jpeg"
-              alt="Artisan crafting a bespoke leather jacket"
-              width={600}
-              height={800}
-              className="w-full h-auto object-cover"
-              priority
-            />
-          </div>
-
+        <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-16 p-4 md:p-8 lg:p-16">
           {/* Text Content */}
-          <div className="flex-1 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C3E50] leading-tight">
+          <div className="flex-1 space-y-4 md:space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2C3E50] leading-tight">
               Bespoke Luxury,
               <br />
               Tailored to
               <br />
               <span className="text-[#8B5A2B]">Perfection</span>
             </h2>
-            <p className="text-[#34495E] text-lg md:text-xl max-w-xl font-light leading-relaxed">
-              Indulge in the ultimate luxury experience with our bespoke
-              service. From selecting the finest leathers to customizing every
-              detail, create a piece that's uniquely yours.
+            <p className="text-[#34495E] text-base md:text-lg lg:text-xl max-w-xl font-light leading-relaxed">
+              Indulge in the ultimate luxury experience with our bespoke service. From selecting the finest leathers to
+              customizing every detail, create a piece that's uniquely yours.
             </p>
             <Link
               href="/bespoke-service"
-              className="inline-block px-8 py-4 bg-[#2C3E50] text-white text-lg font-serif 
+              className="inline-block px-6 py-3 md:px-8 md:py-4 bg-[#2C3E50] text-white text-base md:text-lg font-serif 
                  hover:bg-[#34495E] transition-colors duration-200 uppercase tracking-wide"
             >
               Explore Bespoke Options
@@ -143,28 +132,39 @@ export default function CategorySection() {
           </div>
 
           {/* Image */}
+          <div className="flex-1 w-full max-w-md md:max-w-lg lg:max-w-xl">
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src="/images/hangerJackets.jpeg"
+                alt="Artisan crafting a bespoke leather jacket"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="container mx-auto bg-[#F5F5F0]">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-16 p-8 md:p-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 p-4 md:p-8 lg:p-16">
           {/* Text Content */}
-          <div className="flex-1 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-[#2C3E50] leading-tight">
+          <div className="flex-1 space-y-4 md:space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#2C3E50] leading-tight">
               Bespoke Luxury,
               <br />
               Tailored to
               <br />
               <span className="text-[#8B5A2B]">Perfection</span>
             </h2>
-            <p className="text-[#34495E] text-lg md:text-xl max-w-xl font-light leading-relaxed">
-              Indulge in the ultimate luxury experience with our bespoke
-              service. From selecting the finest leathers to customizing every
-              detail, create a piece that's uniquely yours.
+            <p className="text-[#34495E] text-base md:text-lg lg:text-xl max-w-xl font-light leading-relaxed">
+              Indulge in the ultimate luxury experience with our bespoke service. From selecting the finest leathers to
+              customizing every detail, create a piece that's uniquely yours.
             </p>
             <Link
               href="/bespoke-service"
-              className="inline-block px-8 py-4 bg-[#2C3E50] text-white text-lg font-serif 
+              className="inline-block px-6 py-3 md:px-8 md:py-4 bg-[#2C3E50] text-white text-base md:text-lg font-serif 
                        hover:bg-[#34495E] transition-colors duration-200 uppercase tracking-wide"
             >
               Explore Bespoke Options
@@ -172,15 +172,17 @@ export default function CategorySection() {
           </div>
 
           {/* Image */}
-          <div className="flex-1">
-            <Image
-              src="/images/hangerJackets.jpeg"
-              alt="Artisan crafting a bespoke leather jacket"
-              width={600}
-              height={800}
-              className="w-full h-auto object-cover"
-              priority
-            />
+          <div className="flex-1 w-full max-w-md md:max-w-lg lg:max-w-xl">
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src="/images/hangerJackets.jpeg"
+                alt="Artisan crafting a bespoke leather jacket"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -201,7 +203,7 @@ export default function CategorySection() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                15000+ ORDERS DISPATCHED
+                15000+ Orders Dispached
               </h3>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="relative h-[400px] md:h-[500px] lg:h-[400px] w-full overflow-hidden">
+    <div className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
